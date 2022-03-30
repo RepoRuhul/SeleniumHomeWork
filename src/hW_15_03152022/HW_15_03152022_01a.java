@@ -18,7 +18,7 @@ WebDriver driver;
 		driver.manage().deleteAllCookies();
 		driver.get("https://ebay.com/");
 	}
-	@Test(enabled = true, priority = 01)
+	@Test(enabled = false, priority = 01)
 	public void buttonTest() throws InterruptedException {
 		driver.findElement(By.id("gh-as-a")).click();
 		Thread.sleep(5000); 
@@ -33,7 +33,7 @@ WebDriver driver;
 		driver.findElement(By.partialLinkText("Registra")).click();
 		Thread.sleep(5000);
 	}
-	@Test(enabled = false, priority = 4)
+	@Test(enabled= true, priority = 4)
 	public void linkText() throws InterruptedException {
 		driver.findElement(By.linkText("Registration")).click();
 		Thread.sleep(5000); 
