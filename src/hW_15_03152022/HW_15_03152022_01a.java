@@ -18,23 +18,29 @@ WebDriver driver;
 		driver.manage().deleteAllCookies();
 		driver.get("https://ebay.com/");
 	}
-	@Test(enabled = false, priority = 01)
-	public void buttonTest() throws InterruptedException {
+	@Test(enabled = true, priority = 01)
+	public void buttonTest01() throws InterruptedException {
 		driver.findElement(By.id("gh-as-a")).click();
 		Thread.sleep(5000); 
 	}
 	@Test(enabled = false, priority = 02)
-	public void SearchButtonTest() throws InterruptedException {
+	public void SearchButtonTest02() throws InterruptedException {
 		driver.findElement(By.cssSelector("input.btn.btn-prim.gh-spr")).click();
 		Thread.sleep(5000);
 	}
-	@Test(enabled = false, priority = 03)
-	public void partialLinkText() throws InterruptedException {
+	
+	@Test(enabled = true, priority = 03)
+	public void SearchFieldTest03() throws InterruptedException {
+		driver.findElement(By.name("_nkw")).click();
+		Thread.sleep(5000);
+	}
+	@Test(enabled = false, priority = 04)
+	public void partialLinkText04() throws InterruptedException {
 		driver.findElement(By.partialLinkText("Registra")).click();
 		Thread.sleep(5000);
 	}
-	@Test(enabled= true, priority = 4)
-	public void linkText() throws InterruptedException {
+	@Test(enabled= true, priority = 5)
+	public void linkText05() throws InterruptedException {
 		driver.findElement(By.linkText("Registration")).click();
 		Thread.sleep(5000); 
 	}
