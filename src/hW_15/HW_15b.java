@@ -1,4 +1,4 @@
-package hW_15_03152022;
+package hW_15;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class HW_15_03152022_01a {
+public class HW_15b {
 WebDriver driver;
 	
 	@BeforeTest

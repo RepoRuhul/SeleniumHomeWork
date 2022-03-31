@@ -1,6 +1,6 @@
-package hW_15_03152022;
+package hW_15;
 
-public class HW_15_xpath {
+public class HW_15a_xpath {
 /*
 Dynamic XPath:
 

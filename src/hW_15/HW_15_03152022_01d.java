@@ -1,4 +1,4 @@
-package hW_15_03152022;
+package hW_15;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class HW_15_03152022_01e {
+public class HW_15_03152022_01d {
 	WebDriver driver;
 
 	@BeforeTest
@@ -21,7 +21,7 @@ public class HW_15_03152022_01e {
 
 	@Test
 	public void SearchButtonTest() throws InterruptedException {
-		driver.findElement(By.className("input.btn.btn-prim.gh-sprinput.btn.btn-prim.gh-spr")).click();
+		driver.findElement(By.cssSelector("input.btn.btn-prim.gh-spr")).click();
 		Thread.sleep(5000);
 	}
 
