@@ -39,7 +39,7 @@ WebDriver driver;
 		driver.findElement(By.partialLinkText("Registra")).click();
 		Thread.sleep(5000);
 	}
-	@Test(enabled= true, priority = 5)
+	@Test(enabled= false, priority = 5)
 	public void linkText05() throws InterruptedException {
 		driver.findElement(By.linkText("Registration")).click();
 		Thread.sleep(5000); 
